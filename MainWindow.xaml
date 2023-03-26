@@ -1,0 +1,75 @@
+﻿<Window x:Class="Check_Boxe_and_Radio_Button.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Check_Boxe_and_Radio_Button"
+        mc:Ignorable="d"
+        Title="jefferoni pza joint " Height="500" Width="800">
+
+    <Canvas>
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFE29728" Offset="1"/>
+                <GradientStop Color="#FF8B5E1B" Offset="0.08"/>
+                <GradientStop Color="#FF721563" Offset="0.567"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <Canvas Height="386" Canvas.Left="2" Canvas.Top="94" Width="386" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF795918">
+            <CheckBox x:Name="ckexCheese" Content=" extar Cheese ~ $7" Canvas.Left="9" Canvas.Top="140" Height="30" Width="175" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <CheckBox x:Name="ckPepperoni" Content="Pepperoni ~ $2" Canvas.Left="10" Canvas.Top="45" Height="30" Width="155" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <CheckBox x:Name="ckPineapple" Content="Pineapple ~ $.20" Canvas.Left="10" Canvas.Top="80" Height="30" Width="155" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <CheckBox x:Name="ckspinach" Content="spinach ~ $3" Canvas.Left="10" Canvas.Top="115" Height="30" Width="178" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label Content="Pizza Topping" Canvas.Left="10" Canvas.Top="-2" Height="35" Width="144" RenderTransformOrigin="0.5,0.5" FontFamily="Algerian" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Label Content="Pizza Size" Canvas.Left="186" Canvas.Top="-3" Height="35" Width="114" FontSize="16" RenderTransformOrigin="0.5,0.5" FontFamily="Algerian" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.251"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <RadioButton x:Name="rbSmall" Content="Small ~ $20" Canvas.Left="198" Canvas.Top="27" Height="24" Width="114" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rbMedium" Content="Medium ~ $25" Canvas.Left="200" Canvas.Top="47" Height="24" Width="138" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rbLarge" Content="Large ~ $30" Canvas.Left="201" Canvas.Top="71" Height="24" Width="132" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rbExtraLarge" Content="Extra Large ~$ 47" Canvas.Left="201" Canvas.Top="99" Height="24" Width="155" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rbDrinkSmall" Content="Small ~ $2" Canvas.Left="94" Canvas.Top="228" Height="24" Width="105" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rbDrinkMedium" Content="Medium ~ $2.69" Canvas.Left="92" Canvas.Top="256" Height="24" Width="150" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rbDrinkLarge" Content="Large ~ $3.25" Canvas.Left="91" Canvas.Top="286" Height="24" Width="135" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rbDrinkExtraLarge" Content="Extra Large ~ $7.50" Canvas.Left="91" Canvas.Top="317" Height="24" Width="171" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Content="BEvy" Canvas.Left="95" Canvas.Top="186" Height="35" Width="84" FontSize="24" RenderTransformOrigin="0.5,0.5" FontFamily="Algerian" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.3"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+        </Canvas>
+        <RichTextBox HorizontalAlignment="Center" Canvas.Left="511" Canvas.Top="10" VerticalAlignment="Top" Width="287" Height="410">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runReciept" Text="jefferoni   : )" FontFamily="Algerian"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="btnOrderPizza" Content="Order Pizza" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="112" Click="btnOrderPizza_Click" Canvas.Left="630" Canvas.Top="436"/>
+        <Label Content="Who's pza ? " Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" FontSize="18"/>
+        <TextBox x:Name="txtCustomerName" Canvas.Left="10" TextWrapping="Wrap" Canvas.Top="57" Width="149" HorizontalAlignment="Left" Height="21" VerticalAlignment="Center"/>
+
+    </Canvas>
+</Window>
