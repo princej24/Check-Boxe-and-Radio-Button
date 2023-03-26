@@ -149,9 +149,9 @@ namespace Check_Boxe_and_Radio_Button
          
 
             runReciept.Text += $"\n\n" +
-                $"Subtotal: {amount.ToString("c")}\n" +
-                $"Tax Amount: {calculatedTax.ToString(".")}\n" +
-                $"Total Price: {totalAmount.ToString(".")}";
+                $"Subtotal:$ ~ {totalAmount .ToString(".")}\n" +
+                $"Tax Amount:$ ~ {calculatedTax.ToString(".")}\n" +
+                $"Total Price:$ ~ {amount.ToString(".")}";
 
         }
         public string FormatItem(string item, double amount)
